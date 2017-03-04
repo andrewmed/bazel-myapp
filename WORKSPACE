@@ -1,5 +1,6 @@
 workspace (name = "myapp")
 
+
 maven_server(
     name = "maven",
     url = "https://repo2.maven.org/maven2/",

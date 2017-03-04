@@ -1,3 +1,5 @@
+#### DONT USE
+
 # Setup IntelliJ for Bazel development using the IntelliJ Bazel Plugin.
 # See https://github.com/bazelbuild/intellij for installation instructions.
 directories:
@@ -8,9 +10,5 @@ test_sources:
   src/test/*
 
 targets:
-  //src:myapp # that means, binary out of gen rule -- the top of the iceberg
-  //src/test/...
-
-# TODO: Remove this once Bazel can use Java 8.
-#java_language_level: 7
+  //...:all
 

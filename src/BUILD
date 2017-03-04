@@ -4,6 +4,5 @@ filegroup(
         "//src/main/java/org/andmed/myapp:srcs",
         "//src/test/java/org/andmed/myapp:srcs",
     ],
-    visibility = ["//:__pkg__"],
+    #    visibility = ["//:__pkg__"],
 )
-
