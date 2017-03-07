@@ -11,14 +11,11 @@ filegroup(
     ],
 )
 
-java_binary(
-    name = "hello/Hello",
-    runtime_deps = [
-        ":hello",
-    ],
-)
-
+#   Java interfaces to various native UNIX system services.
 java_library(
-    name = "hello",
-    srcs = glob(["hello/*.java"]),
+    name = "unix",
+    srcs = glob([
+        "unix/*.java",
+    ]),
+    deps = ["//src/main/native:libunix.so"],
 )

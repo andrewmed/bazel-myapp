@@ -10,11 +10,12 @@ filegroup(
 )
 
 java_test(
-    name = "HelloTests",
+    name = "UnixTests",
     size = "small",
-    srcs = glob(["HelloTests.java"]),
+    srcs = glob(["UnixTests.java"]),
+    #    jvm_flags = ["-Djava.library.path=$(GENDIR)/src/main/native"],
     deps = [
-        "//src/main/java/org/andmed/myapp:hello",
+        "//src/main/java/org/andmed/devtools:unix",
         "//third_party:junit4",
     ],
 )

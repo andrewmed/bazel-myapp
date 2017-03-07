@@ -9,7 +9,7 @@ filegroup(
             ".*",  # mainly .git* files
         ],
     ) + [
-        #         "//site:srcs",
+        #        "//site:srcs",
         "//src:srcs",
         "//third_party:srcs",
     ],
@@ -19,7 +19,7 @@ filegroup(
 load("@bazel_tools//tools/build_defs/pkg:pkg.bzl", "pkg_tar", "pkg_deb")
 
 pkg_tar(
-    name = "myapp-srcs",
+    name = "sources",
     files = [":srcs"],
     #    package_dir = "lib",
     strip_prefix = ".",

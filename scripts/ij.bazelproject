@@ -1,10 +1,9 @@
-#### DONT USE
-
-# Setup IntelliJ for Bazel development using the IntelliJ Bazel Plugin.
-# See https://github.com/bazelbuild/intellij for installation instructions.
 directories:
+#  .
   src/main
   src/test
+  third_party
+#  site
 
 test_sources:
   src/test/*

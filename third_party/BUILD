@@ -13,4 +13,3 @@ java_import(
         "junit/junit-4.11.jar",
     ],
 )
-
