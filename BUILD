@@ -11,7 +11,7 @@ filegroup(
     ) + [
         #        "//site:srcs",
         "//src:srcs",
-        "//third_party:srcs",
+        #        "//third_party:srcs",
     ],
     visibility = ["//visibility:private"],
 )

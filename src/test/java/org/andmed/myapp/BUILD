@@ -14,7 +14,14 @@ java_test(
     size = "small",
     srcs = glob(["HelloTests.java"]),
     deps = [
+        "//external:junit4",
         "//src/main/java/org/andmed/myapp:hello",
-        "//third_party:junit4",
     ],
+)
+
+java_binary(
+    name = "HelloBenchmark",
+    srcs = ["HelloBenchmark.java"],
+    plugins = ["//external:jmh_processor"],
+    deps = ["//external:jmh_lib"],
 )

@@ -1,8 +1,8 @@
 directories:
-#  .
-  src/main
-  src/test
-  third_party
+  .
+#  src/main
+#  src/test
+#  third_party
 #  site
 
 test_sources:

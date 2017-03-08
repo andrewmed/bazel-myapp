@@ -15,7 +15,7 @@ java_test(
     srcs = glob(["UnixTests.java"]),
     #    jvm_flags = ["-Djava.library.path=$(GENDIR)/src/main/native"],
     deps = [
+        "//external:junit4",
         "//src/main/java/org/andmed/devtools:unix",
-        "//third_party:junit4",
     ],
 )

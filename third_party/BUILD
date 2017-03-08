@@ -1,15 +1,25 @@
 package(default_visibility = ["//visibility:public"])
 
-filegroup(
-    name = "srcs",
-    srcs = glob(["**"]) + [
+#
+#filegroup( // fixme
+#    name = "srcs",
+#    srcs = glob(
+#        ["**"],
+#    ),
+#)
+#
+java_import(
+    name = "jmh_lib",
+    jars = [
+        "jmh/jmh-generator-annprocess/target/jmh-generator-annprocess-1.18-SNAPSHOT.jar",
+        "jmh/jmh-core-benchmarks/target/benchmarks.jar",
     ],
 )
 
-java_import(
-    name = "junit4",
-    jars = [
-        "hamcrest/hamcrest-core-1.3.jar",
-        "junit/junit-4.11.jar",
+java_plugin(
+    name = "jmh_processor",
+    processor_class = "org.openjdk.jmh.generators.BenchmarkProcessor",
+    deps = [
+        ":jmh_lib",
     ],
 )

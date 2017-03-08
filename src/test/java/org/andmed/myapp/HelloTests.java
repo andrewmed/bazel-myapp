@@ -10,7 +10,12 @@ import static org.junit.Assert.*;
 public class HelloTests {
 
     @Test
-    public void passingTest() throws Exception {
+    public void junitTest() throws Exception {
         assertEquals(true,true);
+    }
+
+    @Test
+    public void jmhTest() throws Exception {
+
     }
 }
