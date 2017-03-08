@@ -9,7 +9,7 @@
 * Junit
 * JMH
 
-#### How to use
+### How to use
 
 ```shell
 andy@laptop:~/repo/bazel-myapp$ bazel run //src/test/java/org/andmed/myapp:HelloBenchmark 
